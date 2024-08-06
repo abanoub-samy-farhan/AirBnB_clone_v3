@@ -7,4 +7,3 @@ from flask import Flask, Blueprint, jsonify
 def hbnbStatus():
     """hbnbStatus"""
     return jsonify({"status": "OK"})
-
