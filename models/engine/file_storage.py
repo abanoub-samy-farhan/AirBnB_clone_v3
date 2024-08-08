@@ -73,7 +73,7 @@ class FileStorage:
         """Function to retrive the values of a specific ID"""
         if cls and id:
             if cls.__name__ in classes:
-                key = f"{cls.__name__}.{id}"
+                key = cls.__name__ + '.' + id
                 obj = self.__objects.get(key, None)
                 return obj
             return None
